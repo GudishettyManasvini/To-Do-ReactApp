@@ -1,53 +1,97 @@
+/* Background changed to blue-purple pastel gradient */
 .app {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  padding: 2rem;
-  background-color: #fff8dc;
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #a8edea, #fed6e3); /* soft blue-pink */
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3a3a3a;
 }
 
 h1 {
-  color: #333;
+  color: #4b2b6f; /* darker purple */
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px #d6b3ffcc;
 }
 
+/* Input section with icon container */
 .input-section {
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  max-width: 400px;
+  width: 100%;
 }
 
+
+
+/* Inputs padding-left to make room for icon */
 input {
-  padding: 0.5rem;
-  width: 60%;
-  max-width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  border: 2px solid #b39ddb;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(179, 157, 219, 0.3);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #7e57c2;
+  outline: none;
+  box-shadow: 0 6px 10px rgba(126, 87, 194, 0.5);
 }
 
 button {
-  margin-left: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #4caf50;
+  padding: 0.7rem 1.4rem;
+  background-color: #8e44ad;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
+  box-shadow: 0 4px 10px #8e44adaa;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex-shrink: 0;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #732d91;
+  transform: scale(1.05);
 }
 
 ul {
   list-style: none;
   padding: 0;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  width: 100%;
+  max-width: 450px;
 }
 
 li {
-  background: #f1f1f1;
+  background: #e1bee7;
   margin: 0.5rem auto;
-  padding: 0.75rem;
-  max-width: 400px;
+  padding: 1rem 1.2rem;
+  max-width: 450px;
   display: flex;
   justify-content: space-between;
-  border-radius: 5px;
+  border-radius: 14px;
+  box-shadow: 0 2px 5px rgba(142, 68, 173, 0.3);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #4b2b6f;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #d1a9e0;
+  box-shadow: 0 4px 8px rgba(142, 68, 173, 0.5);
 }
